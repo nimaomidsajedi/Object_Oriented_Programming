@@ -5,15 +5,16 @@
  *      Author: Nima Omidsajedi
  */
 
-#include "encap.h"
 #include <iostream>
 #include <string>
+#include "sphere_info.h"
 using namespace std;
+using my_unique_encap::sphere_info;
 
 int main() {
 	float radius_num = 10;
 
-	encap sphere;
+	sphere_info sphere;
 	sphere.set_radius(radius_num);
 
 	float volume = sphere.get_volume();
